@@ -74,16 +74,29 @@ body {
   animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* Gentle Floating Animation for Ornamental Badges */
-@keyframes floatSlow {
+/* Living Breathing Hero Animations (Inner Elements Only) */
+@keyframes heroPortraitFloat {
   0%, 100% {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
   }
 }
 
-.animate-float-slow {
-  animation: floatSlow 4.5s ease-in-out infinite;
+@keyframes heroCirclePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.025);
+  }
+}
+
+.animate-portrait-float {
+  animation: heroPortraitFloat 6s ease-in-out infinite;
+}
+
+.animate-circle-pulse {
+  animation: heroCirclePulse 6s ease-in-out infinite;
 }
