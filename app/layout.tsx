@@ -6,26 +6,26 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  title: "Rifki Bayu Ariyanto — Full-Stack Web Developer",
-  description:
-    "Portfolio of Rifki Bayu Ariyanto, Full-Stack Web Developer specializing in clean, high-performance web applications and digital systems.",
-  icons: {
-    icon: "/images/profile.png",
-  },
+    title: "Rifki Bayu Ariyanto | Full-Stack Web Developer",
+    description:
+        "Portfolio of Rifki Bayu Ariyanto, Full-Stack Web Developer specializing in clean, high-performance web applications and digital systems.",
+    icons: {
+        icon: "/images/profile.png",
+    },
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${plus_jakarta_sans.variable} ${red_hat_display.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body
+                className={`${plus_jakarta_sans.variable} ${red_hat_display.variable} antialiased`}
+            >
+                {children}
+            </body>
+        </html>
+    );
 }
