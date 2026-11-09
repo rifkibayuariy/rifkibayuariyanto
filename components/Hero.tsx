@@ -14,22 +14,20 @@ export default function Hero() {
       id="profile"
       className="w-full h-screen relative bg-slate-50 overflow-hidden flex items-center"
     >
-      {/* Background Circle - Exact Original Geometry with Gentle Inner Breathing Animation */}
+      {/* Background Circle - Exact Original Geometry with Smooth Motion (Float & Pulse) */}
       <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/10 xl:-translate-y-2/5 h-2/5 md:h-3/5 xl:h-4/5 aspect-square z-0 pointer-events-none">
-        <div className="w-full h-full rounded-full bg-[#20e9bd] animate-circle-pulse will-change-transform"></div>
+        <div className="w-full h-full rounded-full bg-[#20e9bd] animate-circle-motion will-change-transform shadow-xs"></div>
       </div>
 
-      {/* Profile Photo - Exact Original Geometry with Gentle Living Floating Motion */}
+      {/* Profile Photo - Static & Solid, Exactly Anchored */}
       <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 h-8/12 xl:h-full aspect-square z-1 pointer-events-none">
-        <div className="relative w-full h-full animate-portrait-float will-change-transform">
-          <Image
-            src="/images/profile-cropped.png"
-            alt="Rifki Bayu Ariyanto"
-            className="object-contain"
-            fill
-            priority
-          />
-        </div>
+        <Image
+          src="/images/profile-cropped.png"
+          alt="Rifki Bayu Ariyanto"
+          className="object-contain"
+          fill
+          priority
+        />
       </div>
 
       {/* Main Hero Content */}
